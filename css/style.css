@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF3E41;
+    --primary: #001973;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
@@ -80,7 +80,7 @@
     margin-left: 8px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     position: relative;
     margin-right: 30px;
     padding: 25px 0;
@@ -90,39 +90,44 @@
     outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FFFFFF;
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-dark .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
     }
 
-    .navbar-light .navbar-nav {
+    .navbar-dark .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
 }
 
-.navbar-light .navbar-brand,
-.navbar-light a.btn {
+.navbar-dark .navbar-brand,
+.navbar-dark a.btn {
     height: 75px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
     font-weight: 500;
 }
 
-.navbar-light.sticky-top {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FFFFFF;
+}
+
+.navbar-dark.sticky-top {
     top: -100px;
     transition: .5s;
 }
 
 @media (min-width: 992px) {
-    .navbar-light .navbar-nav .nav-link::before {
+    .navbar-dark .navbar-nav .nav-link::before {
         position: absolute;
         content: "";
         width: 0;
@@ -133,13 +138,13 @@
         transition: .5s;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover::before,
-    .navbar-light .navbar-nav .nav-link.active::before {
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
         width: 100%;
         left: 0;
     }
 
-    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+    .navbar-dark .navbar-nav .nav-link.nav-contact::before {
         display: none;
     }
 
