@@ -121,8 +121,8 @@
     color: #FFFFFF;
 }
 
-.navbar-dark.sticky-top {
-    top: -100px;
+.navbar-dark {
+    top: 0 !important;
     transition: .5s;
     background-color: transparent;
 }
