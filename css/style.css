@@ -124,6 +124,11 @@
 .navbar-dark.sticky-top {
     top: -100px;
     transition: .5s;
+    background-color: transparent;
+}
+
+.navbar-dark.sticky-top.navbar-scrolled {
+    background-color: #001973 !important;
 }
 
 @media (min-width: 992px) {
