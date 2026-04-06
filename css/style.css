@@ -96,6 +96,14 @@
 }
 
 @media (max-width: 991.98px) {
+    .navbar-dark {
+        background-color: var(--primary) !important;
+    }
+
+    .navbar-dark .navbar-collapse {
+        background-color: var(--primary);
+    }
+
     .navbar-dark .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
