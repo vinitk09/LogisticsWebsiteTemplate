@@ -111,5 +111,18 @@
     });
 
 
+    // Global fixed WhatsApp button
+    if (!document.querySelector('.whatsapp-float')) {
+        const whatsappBtn = document.createElement('a');
+        whatsappBtn.href = 'https://wa.me/919709153110';
+        whatsappBtn.className = 'whatsapp-float';
+        whatsappBtn.target = '_blank';
+        whatsappBtn.rel = 'noopener noreferrer';
+        whatsappBtn.setAttribute('aria-label', 'Chat on WhatsApp');
+        whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+        document.body.appendChild(whatsappBtn);
+    }
+
+
 })(jQuery);
 

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Returnable Logistics | CARCA Rapid - Asset Recovery & Reusable Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="CARCA Rapid provides end-to-end returnable logistics services including pallet pooling, FLC management, container tracking, and reusable asset recovery across India.">
+    <meta name="keywords" content="returnable logistics, pallet pooling, FLC management, asset recovery, reusable containers, supply chain, CARCA Rapid">
+    <meta name="author" content="CARCA Rapid">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Brand color override - #001973 (Deep Navy Blue) */
+        :root {
+            --carca-primary: #001973;
+            --carca-primary-dark: #001158;
+            --carca-primary-light: #eef2fc;
+        }
+        .text-carca-primary {
+            color: #001973 !important;
+        }
+        .bg-carca-primary {
+            background-color: #001973 !important;
+        }
+        .btn-carca {
+            background: #001973;
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 28px;
+            border-radius: 40px;
+            transition: all 0.3s;
+        }
+        .btn-carca:hover {
+            background: #001158;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 25, 115, 0.2);
+            color: white;
+        }
+        .btn-outline-carca {
+            border: 2px solid #001973;
+            color: #001973;
+            background: transparent;
+            border-radius: 40px;
+            padding: 8px 24px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-outline-carca:hover {
+            background: #001973;
+            color: white;
+        }
+        /* Hero section - minimal */
+        .returnable-hero {
+            min-height: 50vh;
+            background: linear-gradient(rgba(23, 23, 24, 0.75), rgba(22, 23, 26, 0.65)), url('img/warehousing.jpg') center center / cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 20px 70px;
+        }
+        /* Card styling with proper image fit */
+        .returnable-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+        }
+        .returnable-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 25, 115, 0.12);
+        }
+        .returnable-card-img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            background: #f8f9fc;
+            padding: 20px;
+            transition: transform 0.4s ease;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .returnable-card:hover .returnable-card-img {
+            transform: scale(1.02);
+        }
+        .returnable-card-body {
+            padding: 1.8rem;
+        }
+        .stats-card {
+            background: #fff;
+            border-radius: 24px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+            transition: all 0.3s;
+            border-bottom: 3px solid #001973;
+        }
+        .process-step {
+            background: white;
+            border-radius: 28px;
+            padding: 1.5rem;
+            height: 100%;
+            transition: all 0.25s;
+            border: 1px solid #eef2f0;
+        }
+        .process-step .step-number {
+            width: 48px;
+            height: 48px;
+            background: #001973;
+            color: white;
+            font-weight: 800;
+            font-size: 1.6rem;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+        .bg-soft-carca {
+            background-color: rgba(0, 25, 115, 0.05);
+        }
+        .testimonial-card {
+            background: #fff;
+            border-radius: 24px;
+            padding: 1.8rem;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+            border: 1px solid #eef2f0;
+        }
+        /* Footer logo yellow fix - stays yellow/gold */
+       
+       
+        .dropdown-item.active, .dropdown-item:active {
+            background-color: #001973;
+        }
+        .back-to-top {
+            background-color: #001973;
+        }
+        .back-to-top:hover {
+            background-color: #001158;
+        }
+        .btn-primary {
+            background-color: #001973;
+            border-color: #001973;
+        }
+        .btn-primary:hover {
+            background-color: #001158;
+            border-color: #001158;
+        }
+        /* Spinner color */
+        .spinner-grow.text-primary {
+            color: #001973 !important;
+        }
+        /* Section heading accent */
+        .section-heading {
+            color: #001973;
+            position: relative;
+            display: inline-block;
+        }
+        .section-heading:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #001973;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark p-0" id="navbar" style="position: fixed; top: 0px; left: 0px; right: 0px; background-color: transparent; transition: all 0.3s ease; z-index: 1000;">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="background-color: transparent;">
+            <!-- <h2 class="mb-2 text-white">Carca</h2> -->
+            <img class="img-fluid" src="img/carcalogo.png" alt="Logo" style="width: 100px; height: auto;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                   <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="coreServices.html" class="dropdown-item">Core Services</a>
+                        <a href="transport.html" class="dropdown-item">Transport Services</a>
+                        <a href="warehousing.html" class="dropdown-item">Warehousing Services</a>
+                        <!-- <a href="#" class="dropdown-item">Our Team</a> -->
+                        <!-- <a href="#" class="dropdown-item">Supply Chain Services</a> -->
+                        <a href="#" class="dropdown-item">Consultancy Services</a>
+                         <!-- <a href="#" class="dropdown-item">Import Export Services</a> -->
+                         <a href="returnablelogistics.html" class="dropdown-item">Returnable Logistics Services</a>
+
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="carcagroup.html" class="dropdown-item">CARCA Group</a>
+                        <a href="csr.html" class="dropdown-item">CSR</a>
+                        <a href="ourclient.html" class="dropdown-item">Our Clients</a>
+
+                        
+                    </div>
+                </div>
+                <!-- <a href="#" class="nav-item nav-link">Serve</a> -->
+                 <a href="whycarca.html" class="nav-item nav-link">Why Carca</a>
+                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <!-- <h4 class="m-0 pe-lg-5 d-none d-lg-block text-white"><i class="fa fa-headphones text-white me-3"></i>+91 9709153110</h4> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section - Minimal heading + description -->
+    <div class="container-fluid p-0">
+        <div class="returnable-hero">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 text-white mb-3 wow fadeInUp" data-wow-delay="0.1s">Returnable Logistics Services</h1>
+                        <p class="fs-5 text-white-50 mb-0 wow fadeInUp" data-wow-delay="0.2s">Efficient pallet pooling, container management, and reusable asset recovery for circular supply chains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Main Content: Cards with images and text -->
+    <div class="container-fluid py-5">
+        <div class="container py-4">
+            <!-- Intro text + stats row -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="mb-3" style="color: #001973;">Returnable Logistics Redefined</h2>
+                    <p class="mb-3 fs-5">At CARCA Rapid, we design returnable logistics ecosystems that reduce waste, lower costs, and maximize asset utilization. Our integrated network handles pallets, FLCs (full load containers), crates, totes, and IBCs with real-time tracking and structured return cycles.</p>
+                    <p>We help manufacturers, retailers, and logistics providers eliminate asset leakage, reduce capital tied up in containers, and streamline reverse logistics. Our proven methodology ensures high asset recovery rates and shorter turnaround times.</p>
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <div><i class="fas fa-check-circle" style="color: #001973;"></i> Real-time visibility</div>
+                        <div><i class="fas fa-check-circle" style="color: #001973;"></i> Pan-India network</div>
+                        <div><i class="fas fa-check-circle" style="color: #001973;"></i> Auto reconciliation</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <i class="fas fa-pallet fa-3x mb-3" style="color: #001973;"></i>
+                                <h2 class="mb-0">5L+</h2>
+                                <p class="mb-0 text-muted">Pallets managed</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <i class="fas fa-truck-moving fa-3x mb-3" style="color: #001973;"></i>
+                                <h2 class="mb-0">98%</h2>
+                                <p class="mb-0 text-muted">On-time return</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <div class="stats-card">
+                                <i class="fas fa-chart-line fa-3x mb-3" style="color: #001973;"></i>
+                                <h2 class="mb-0">24/7</h2>
+                                <p class="mb-0 text-muted">Control tower</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <div class="stats-card">
+                                <i class="fas fa-recycle fa-3x mb-3" style="color: #001973;"></i>
+                                <h2 class="mb-0">30%</h2>
+                                <p class="mb-0 text-muted">Cost reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards Row 1: Pallet Pooling & FLC Management -->
+            <div class="row g-5 mt-3">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="returnable-card">
+                        <img src="img/pp.jpg" alt="Pallet Pooling Services" class="returnable-card-img">
+                        <div class="returnable-card-body">
+                            <h3 class="mb-3" style="color: #001973;">Pallet Pooling</h3>
+                            <p class="mb-3">National pallet sharing network that eliminates purchase fragmentation. We provide hygienic, grade-A wooden & plastic pallets on a rental/pooling model with seamless pickup from delivery points. Reduce procurement costs while ensuring zero pallet shortages during peak seasons.</p>
+                            <p><strong>Key benefits:</strong> real-time inventory, automated invoicing, repair & replacement cycles.</p>
+                            <a href="#" class="btn btn-outline-carca mt-2">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="returnable-card">
+                        <img src="img/flc.jpg" alt="FLC & Container Management" class="returnable-card-img">
+                        <div class="returnable-card-body">
+                            <h3 class="mb-3" style="color: #001973;">FLC & Container Management</h3>
+                            <p class="mb-3">Full load containers, roll cages, and reusable totes managed end-to-end. Our returnable container system provides depots for consolidation, cleaning, and redistribution. We minimize demurrage and detention charges while optimizing container turn times.</p>
+                            <p><strong>Smart features:</strong> QR-based scanning, GPS-enabled high-value assets, automated return alerts.</p>
+                            <a href="#" class="btn btn-outline-carca mt-2">Discover <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+
+    <!-- Process Section - How It Works -->
+    <div class="container-fluid py-5 bg-soft-carca">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" style="max-width: 700px;">
+                <h2 style="color: #001973;">Seamless Returnable Cycle</h2>
+                <p class="fs-5">Simple, transparent 4-step process built for accountability and speed.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="process-step text-center">
+                        <div class="step-number mx-auto">1</div>
+                        <h5>Asset Dispatch</h5>
+                        <p class="text-muted">Pre-inspected pallets/containers delivered with unique IDs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="process-step text-center">
+                        <div class="step-number mx-auto">2</div>
+                        <h5>Usage & Scan</h5>
+                        <p class="text-muted">Scan upon receipt, automated triggers for returns.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="process-step text-center">
+                        <div class="step-number mx-auto">3</div>
+                        <h5>Scheduled Pickup</h5>
+                        <p class="text-muted">Our fleet collects empty assets from multiple locations.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="process-step text-center">
+                        <div class="step-number mx-auto">4</div>
+                        <h5>Reconciliation</h5>
+                        <p class="text-muted">Inspection, repair, and credit for returned assets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-carca px-5 py-3 rounded-pill">Partner with CARCA <i class="fas fa-handshake ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container-fluid py-5">
+        <div class="container py-3">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" style="max-width: 700px;">
+                <h2 style="color: #001973;">Trusted by Industry Leaders</h2>
+                <p>What our partners say about our returnable logistics solutions</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #001973; opacity: 0.4;"></i>
+                        <p class="mb-3">“CARCA's pallet pooling saved us over ₹2Cr annually. Their real-time reconciliation eliminated asset disputes.”</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                            <div class="ms-3"><strong>Supply Head</strong><br><small>Leading FMCG brand</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #001973; opacity: 0.4;"></i>
+                        <p class="mb-3">“Container turnaround time reduced by 45% and near-zero leakage achieved with CARCA's management system.”</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                            <div class="ms-3"><strong>Logistics Director</strong><br><small>Automotive manufacturer</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #001973; opacity: 0.4;"></i>
+                        <p class="mb-3">“Digital platform and support made tracking thousands of IBCs effortless. Highly recommended for circular packaging.”</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                            <div class="ms-3"><strong>Operations Manager</strong><br><small>Specialty chemicals</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section with new brand color -->
+    <div class="container-fluid py-5" style="background: #001973;">
+        <div class="container py-4 text-center">
+            <h2 class="display-6 text-white mb-3">Ready to optimize your returnable logistics?</h2>
+            <p class="fs-5 text-white mb-4">Get a customized quote — reduce asset loss and improve sustainability today.</p>
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 rounded-pill" style="color: #001973; font-weight: 600;">Request a consultation <i class="fas fa-calendar-check ms-2"></i></a>
+            <p class="mt-4 text-white-50"><i class="fas fa-phone-alt me-2"></i> +91 9709153110 | <i class="fas fa-envelope me-2"></i> info@carcarapid.com</p>
+        </div>
+    </div>
+
+    <!-- Footer Start - logo appears yellow -->
+  <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Logo & Description Column - Moved to Left Side -->
+            <div class="col-lg-3 col-md-12">
+                <img src="img/carcalogo.png" alt="CARCA Rapid Logo" style="width: 160px; margin-bottom: 20px;">
+                <p class="mb-3" style="line-height: 1.6;">CARCA Rapid is a trusted logistics partner offering end-to-end supply chain solutions, transport services, warehousing, and returnable logistics across India. We deliver reliability, speed, and operational excellence.</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Carca Links -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <h4 class="text-light mb-4">Team Carca</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Core Team</a>
+                <a class="btn btn-link" href="">Awards</a>
+                <a class="btn btn-link" href="">CSR</a>
+            </div>
+
+            <!-- Our Services Links -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <h4 class="text-light mb-4">Our Services</h4>
+                <a class="btn btn-link" href="coreServices.html">Core Services</a>
+                <a class="btn btn-link" href="transport.html">Transport Services</a>
+                <a class="btn btn-link" href="warehousing.html">Warehousing Services</a>
+                <a class="btn btn-link" href="consultancy.html">Consultancy Services</a>
+                <a class="btn btn-link" href="returnablelogistics.html">Returnable Logistics</a>
+            </div>
+
+            <!-- Press Room Links -->
+           
+
+            <!-- Contact & Address Column -->
+            <div class="col-lg-3 col-md-12">
+                <h4 class="text-light mb-4">Get in Touch</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Flat No 204, Girish Apartment, Deo Nagar Baradwari, Jamshedpur, East Singhbhum, Jharkhand 831001</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9709153110</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@carcarapid.com<br><span class="ms-4"></span>carcarapid@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">CARCA Rapid</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="border-bottom" href="https://venturingdigitally.com">Venturing Digitally Pvt Ltd</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#000000';
+                navbar.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.4)';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+        // Spinner hide
+        window.addEventListener('load', function() {
+            const spinner = document.getElementById('spinner');
+            if (spinner) spinner.classList.remove('show');
+        });
+        // WOW init
+        new WOW().init();
+    </script>
+</body>
+</html>
