@@ -20,8 +20,10 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').css('top', '0px');
+            $('#navbar').addClass('navbar-scrolled');
         } else {
             $('.sticky-top').css('top', '-100px');
+            $('#navbar').removeClass('navbar-scrolled');
         }
     });
     
@@ -50,6 +52,26 @@
             );
         } else {
             $dropdown.off("mouseenter mouseleave");
+        }
+    });
+
+
+    // Active nav link by current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const $navItems = $('.navbar-nav .nav-link[href], .navbar-nav .dropdown-item[href]');
+
+    $navItems.removeClass('active');
+
+    $navItems.each(function () {
+        const href = ($(this).attr('href') || '').split('#')[0].split('?')[0];
+
+        if (!href || href === '#') {
+            return;
+        }
+
+        if (href === currentPage) {
+            $(this).addClass('active');
+            $(this).closest('.dropdown').find('> .nav-link.dropdown-toggle').addClass('active');
         }
     });
     
